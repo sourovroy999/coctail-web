@@ -6,10 +6,9 @@ function App() {
 
 
   return (
-    <div className=''>
-   
-      <p className='text-6xl'>hello</p>
-    </div>
+  <main>
+    
+  </main>
   )
 }
 
