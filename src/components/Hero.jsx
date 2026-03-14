@@ -2,9 +2,11 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import React, { useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import bgimg from '../../public/images/noise.png'
 
 const Hero = () => {
 
+    
     const videoRef = useRef()
 
     const isMobile=useMediaQuery({maxWidth:767});
@@ -19,6 +21,7 @@ const Hero = () => {
 	 scrollTrigger: {
 		trigger: "video",
 		start: startValue,
+        
 		end: endValue,
 		scrub: true,
 		pin: true,
@@ -36,7 +39,7 @@ const Hero = () => {
 
     return (
         <>
-            <section id='hero' className='absolute inset-0 size-full '>
+            <section id='hero' style={{backgroundImage:`url(${bgimg})`}} className='absolute  inset-0 size-full '>
                 <div className='absolute -left-7 md:top-20 top-50'>
                     <img src="/public/images/cocktail-left-leaf.png" alt="" />
 
@@ -49,12 +52,13 @@ const Hero = () => {
                 </div>
 
 
-                <h1 className='text-center font-modern-negra text-8xl md:text-[20vw] leading-none mt-30 '>MOJITO</h1>
+                <h1 className='text-center font-modern-negra text-8xl md:text-[20vw] leading-none pt-30 '>MOJITO</h1>
 
                 {/* body */}
 
 
-                <div className='container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20 top-auto md:top-[40vh] flex  justify-between flex-col lg:flex-row lg:items-end px-5;'>
+                <div className='lg:container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-50
+                  md:top-[15vh]  flex  justify-between flex-col lg:flex-row lg:items-end px-5;'>
 
 
                     <div >
@@ -86,7 +90,7 @@ const Hero = () => {
           
                 <video
                     ref={videoRef}
-                    className='w-full md:h-[80%] h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover'
+                    className='w-full md:h-[80%] h-1/2 absolute bottom-0  left-0 md:object-contain object-bottom object-cover'
                     muted
                     playsInline
                     preload='auto'
