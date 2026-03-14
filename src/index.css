@@ -24,3 +24,8 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
+  #hero {
+        @apply relative z-10 min-h-dvh  w-full  ;
+    
+    }
