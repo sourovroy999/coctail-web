@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Reviews = () => {
+import bgimg from '../public/images/noise.png'
+
+
+const About = () => {
     return (
         <div className='container mx-auto '>
            
@@ -46,21 +49,25 @@ const Reviews = () => {
 
             <div className='grid grid-cols-1  xl:grid-cols-12 gap-5 mb-5  md:px-0 px-5'>
 
-            <div className='md:col-span-3'>
-                <div className='rounded-3xl overflow-hidden h-72 relative'>
-                    <img className='object-cover w-full h-full' src="/public/images/abt1.png" alt="grid-img-1" />
+            <div  className='md:col-span-3'>
+                
+                <div  className='rounded-3xl overflow-hidden h-72 relative  '>
+                    <img  className='object-cover w-full h-full' src="/public/images/abt1.png" alt="grid-img-1" />
+                    <img  className='absolute inset-0 object-cover w-full h-full ' src="/public/images/noise.png" alt="" />
                 </div>
 
             </div>
             <div className='md:col-span-6'>
                 <div className='rounded-3xl overflow-hidden h-72 relative'>
-                    <img className='object-cover w-full h-full' src="/public/images/abt2.png" alt="grid-img-2" />
+                    <img className='object-cover w-full h-full inset-0' src="/public/images/abt2.png" alt="grid-img-2" />
+                    <img  className='absolute inset-0 object-cover w-full h-full ' src="/public/images/noise.png" alt="" />
                 </div>
 
             </div>
             <div className='md:col-span-3'>
                 <div className='rounded-3xl overflow-hidden h-72 relative'>
                     <img className='object-cover w-full h-full' src="/public/images/abt5.png" alt="grid-img-5" />
+                    <img  className='absolute inset-0 object-cover w-full h-full ' src="/public/images/noise.png" alt="" />
                 </div>
 
             </div>
@@ -77,6 +84,7 @@ const Reviews = () => {
                <div className='md:col-span-7'>
                 <div className='rounded-3xl overflow-hidden h-72 relative'>
                     <img className='object-cover w-full h-full' src="/public/images/abt3.png" alt="grid-img-3" />
+                    <img  className='absolute inset-0 object-cover w-full h-full ' src="/public/images/noise.png" alt="" />
                 </div>
 
             </div>
@@ -84,6 +92,7 @@ const Reviews = () => {
                <div className='md:col-span-5'>
                 <div className='rounded-3xl overflow-hidden h-72 relative'>
                     <img className='object-cover w-full h-full' src="/public/images/abt4.png" alt="grid-img-4" />
+                    <img  className='absolute inset-0 object-cover w-full h-full ' src="/public/images/noise.png" alt="" />
                 </div>
 
             </div>
@@ -92,9 +101,9 @@ const Reviews = () => {
 
             </div>
 
-            <div className='h-dvh'></div>
+            {/* <div className='h-dvh'></div> */}
         </div>
     );
 };
 
-export default Reviews;
+export default About;
