@@ -57,8 +57,8 @@ const Hero = () => {
                 {/* body */}
 
 
-                <div className='lg:container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-50
-                  md:top-[15vh]  flex  justify-between flex-col lg:flex-row lg:items-end px-5;'>
+                <div className='lg:container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20
+                  md:top-[35vh]   flex  justify-between flex-col lg:flex-row lg:items-end px-5;'>
 
 
                     <div >

@@ -4,7 +4,7 @@ import bgimg from '../public/images/noise.png'
 
 const Cocktails = () => {
     return (
-        <section style={{backgroundImage:`url(${bgimg})`}} className='relative justify-between  z-20 flex  mx-auto flex-col w-full overflow-hidden min-h-dvh md:flex-row md:px-16 lg:px-45 '>
+        <section style={{backgroundImage:`url(${bgimg})`}} className='relative justify-between  z-20 flex  mx-auto flex-col w-full overflow-hidden min-h-dvh md:flex-row md:px-16 lg:px-45 pt-60 '>
 
             <div className='flex flex-col gap-4 '>
 
