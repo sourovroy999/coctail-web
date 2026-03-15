@@ -25,7 +25,7 @@ const About = () => {
             scrollTrigger:{
                 trigger:'#about',
                 start:'top 80%',
-                markers:true,
+                // markers:true,
 
             }
         })
@@ -65,7 +65,7 @@ const About = () => {
         scrollTrigger:{
             trigger:'#about',
             start:'top 50%',
-            markers:true
+            // markers:true
         }
     })
 

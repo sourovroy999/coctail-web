@@ -1,6 +1,6 @@
 import React from 'react';
-import { cocktailLists, mockTailLists } from '../constants';
-import bgimg from '../public/images/noise.png'
+import { cocktailLists, mockTailLists } from '../../constants';
+import bgimg from '../../public/images/noise.png'
 
 const Cocktails = () => {
     return (
