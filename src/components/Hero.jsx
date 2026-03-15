@@ -40,7 +40,7 @@ const Hero = () => {
 
     return (
         <>
-            <section id='hero' style={{backgroundImage:`url(${bgimg})`}} className='absolute  inset-0 size-full '>
+            <section id='hero' style={{backgroundImage:`url(${bgimg})`}} className='absolute   inset-0 size-full '>
                 <div className='absolute -left-7 md:top-20 top-50'>
                     <img src="/public/images/cocktail-left-leaf.png" alt="" />
 
@@ -95,7 +95,7 @@ const Hero = () => {
                     muted
                     playsInline
                     preload='auto'
-                    autoplay
+                    // autoPlay
                     src="/videos/output.mp4"></video>
         
 

@@ -7,44 +7,7 @@ import React from 'react';
 
 const About = () => {
 
-    // useGSAP(()=>{
-
-    //     const titleSplit=SplitText.create('#cocktail-heading', {
-    //         type:'words'
-    //     })
-        
-    //     const scrollTimeline=gsap.timeline({
-    //         scrollTrigger:{
-    //             trigger:'#about',
-    //             start:'top center',
-    //             markers:true,
-    //         }
-            
-    //     })
-
-    //     scrollTimeline
-    //     .from(titleSplit.words, {
-    //         opacity:0,
-    //         duration:1,
-    //         yPercent:60,
-    //         ease:'expo.out',
-    //         stagger:0.02,
-    //         // yoyo:true,
-    //         // repeat:-1,
-    //     })
-    //     .from('.top-grid div , .bottom-grid div', {
-    //            opacity:0,
-    //         duration:1,
-    //         yPercent:100,
-    //         ease:'power1.inOut',
-    //         stagger:0.02,
-    //         //  yoyo:true,
-    //         // repeat:-1,
-    //     }, '-=0.5')
-
-
-
-    // })
+   
 
     useGSAP(()=>{
 
@@ -61,7 +24,7 @@ const About = () => {
         const tl=gsap.timeline({
             scrollTrigger:{
                 trigger:'#about',
-                start:'top 50%',
+                start:'top 80%',
                 markers:true,
 
             }
@@ -96,9 +59,25 @@ const About = () => {
         yPercent:60,
         opacity:0,
         duration:1
-    }, '<')
+    },'-=1' )
 
-    
+    const imgTl=gsap.timeline({
+        scrollTrigger:{
+            trigger:'#about',
+            start:'top 50%',
+            markers:true
+        }
+    })
+
+    imgTl.from('#img', {
+         opacity:0,
+            duration:1,
+            yPercent:60,
+            ease:'power1.inOut',
+            stagger:0.3,
+    })
+
+
 
     })
 
@@ -180,7 +159,7 @@ const About = () => {
 
             <div className='grid grid-cols-12 bottom-grid gap-5 mb-5 md:px-0 px-5'>
                 
-               <div className='md:col-span-7'>
+               <div id='img'  className='md:col-span-7'>
                 <div className='rounded-3xl overflow-hidden h-72 relative'>
                     <img className='object-cover w-full h-full' src="/public/images/abt3.png" alt="grid-img-3" />
                     <img  className='absolute inset-0 object-cover w-full h-full ' src="/public/images/noise.png" alt="" />
@@ -188,7 +167,7 @@ const About = () => {
 
             </div>
 
-               <div className='md:col-span-5'>
+               <div id='img'  className='md:col-span-5'>
                 <div className='rounded-3xl overflow-hidden h-72 relative'>
                     <img className='object-cover w-full h-full' src="/public/images/abt4.png" alt="grid-img-4" />
                     <img  className='absolute inset-0 object-cover w-full h-full ' src="/public/images/noise.png" alt="" />
