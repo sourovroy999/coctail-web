@@ -27,7 +27,7 @@ function App() {
     <About/>
     <Art/>
 
-    {/* <div className='h-dvh bg-black'></div> */}
+    <div className='h-dvh bg-black'></div>
     </main>
 
 

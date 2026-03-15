@@ -35,3 +35,12 @@ body {
     mask-position: center;
     mask-size: 50%;
 }
+
+@utility radial-gradient {
+    background: radial-gradient(
+            circle at center,
+            #434343 0%,
+            #000 50%,
+            transparent 100%
+    );
+}
